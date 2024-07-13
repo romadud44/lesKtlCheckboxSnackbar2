@@ -46,6 +46,16 @@
             android:layout_marginStart="8pt"
             android:layout_marginEnd="8pt"/>
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutMain"
+        android:layout_marginStart="8pt"
+        android:layout_marginEnd="8pt"
+        android:layout_marginTop="8pt"
+        android:layout_marginBottom="8pt">
+
     <TextView
         android:id="@+id/infoPddTV"
         android:layout_width="match_parent"
@@ -56,7 +66,7 @@
         android:layout_marginTop="8pt"
         android:layout_marginBottom="8pt"
         />
-
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
