@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var checkCB: CheckBox
     private lateinit var outTV: TextView
     private lateinit var infoPddTV: TextView
-    private fun findId(){
+    private fun findId() {
         toolbarMain = findViewById(R.id.toolbarMain)
         setSupportActionBar(toolbarMain)
         title = "Правила дорожного движения"
@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findId()
 
-        checkCB.setOnClickListener{
-            if(checkCB.isChecked){
+        checkCB.setOnClickListener {
+            if (checkCB.isChecked) {
                 outTV.text = "Правила дорожного движения"
                 infoPddTV.text = TrafficRules().rules
-            } else{
+            } else {
                 outTV.text = ""
                 infoPddTV.text = ""
             }
